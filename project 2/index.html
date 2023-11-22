@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500;700&display=swap" 
+rel="stylesheet">
+<link rel="stylesheet" href="mediaqueries.css">
+  <title>Mahlangu Lucas</title>
+</head>
+<body>
+  <!-- CREATING A NAVOGATION BAR -->
+
+  <nav id="desktop-nav">
+
+    <label class="logo">Mahlangu Lucas</label>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HAMBURGER MENU -->
+
+  <nav id="hamburger-nav">
+    <label class="logo">Mahlangu Lucas</label>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SECTION -->
+  <section id="profile">
+    <div class="secion_pic-container">
+      <img class="myImage" src="Images/Profile.png" alt="Profile image">
+    </div>
+    <div class="section_text">
+      <p class="section_text_p1">Hello, I'm</p>
+      <h1 class="title">Mahlangu Tshepang</h1>
+      <p class="section_text_p2">Software Engineer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-1" onclick="alert('Not yet updated')" >Download CV</button>
+        <button  class="btn btn-color-2" onclick="location.href = './#contact'">Contact Info</button>
+      </div>
+      <div id="socials-container">
+        <img src="./Icons/github.png" class="icon" onclick="location.href = 'https://github.com/Luccodev'">
+        <img src="./Icons/linkedin.png" class="icon" onclick="location.href = 'https://www.linkedin.com/in/lucas-mahlangu-38184a201'">
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    
+    <p class="section_text_p1">Get to know more</p>
+    <h1 class="title">About</h1>
+
+    <div class="section-container">
+        <div class="about-container">
+          <div class="details-container">
+            <img src="./Images/experience.png" class="icon">
+            <h3>Experience</h3>
+            <p>4 months <br> Coding Instructor</p>
+          </div>
+          <div class="details-container">
+            <img src="./Images/education.png" class="icon">
+            <h3>Education</h3>
+            <p>Higher certificate <br>Software Engineering</p>
+          </div>
+          </div>
+          <div class="text-container">
+            I am a self taugh programer who likes playing around 
+            object orineted pragamming langaueges like python, java and javascript. 
+            I spend most of my time learning how to code and create new projects.
+          </div>
+      </div>
+    <img src="./Icons/arrow.png" alt="arrow icon" class="icon arrow" 
+    onclick="location.href = './#experience'">
+  </section>
+  <section id="experience">
+    <p class="section_text_p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+
+    <div class="experience-details-conatiner">
+      <div class="about-container">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <img src="./Icons/checkmark.png" alt="Checkmark" class="icon">
+            <h3>HTML</h3>
+            <p>Intermediate</p>
+          </div>
+          <div class="article-container">
+            <img src="./Icons/checkmark.png" alt="Checkmark" class="icon">
+            <h3>CSS</h3>
+            <p>Besic</p>
+          </div>
+          <div class="article-container">
+            <img src="./Icons/checkmark.png" alt="Checkmark" class="icon">
+            <h3>JavaScript</h3>
+            <p>Besic</p>
+          </div>
+      </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <img src="./Icons/checkmark.png" alt="Checkmark" class="icon">
+            <h3>SQL</h3>
+            <p>Basic</p>
+          </div>
+          <div class="article-container">
+            <img src="./Icons/checkmark.png" alt="Checkmark" class="icon">
+            <h3>Python</h3>
+            <p>Basic</p>
+          </div>
+          <div class="article-container">
+            <img src="./Icons/checkmark.png" alt="Checkmark" class="icon">
+            <h3>Git</h3>
+            <p>Basic</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./Icons/arrow.png" alt="arrow icon" class="icon arrow" 
+    onclick="location.href = './#project'">
+  </section>
+  <section id="project">
+      <p class="section_text_p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-container">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="Images/quiz-project.png" alt="project 1" 
+            class="project-img">
+          </div>
+          <h2 class="experience-sub-title">Project One</h2>
+          <div class="btn-conatiner">
+            <button class="btn btn-color-2 project-btn" 
+            onclick="location.href = 'https://github.com/Luccodev/Quiz' ">
+            GitHub</button>
+            <button class="btn btn-color-2 project-btn" 
+            onclick="location.href = 'https://cool-quiz-game-app.netlify.app/' ">
+            live Demo</button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="Images/tic-tac-toe-project.png" alt="project 2" 
+            class="project-img">
+          </div>
+          <h2 class="experience-sub-title">Project Two</h2>
+          <div class="btn-conatiner">
+            <button class="btn btn-color-2 project-btn" 
+            onclick="location.href = 'https://github.com/Luccodev/tic-tac-toe' ">
+            GitHub</button>
+            <button class="btn btn-color-2 project-btn" 
+            onclick="location.href = 'https://tic-tac-toe-appl.netlify.app/' ">
+            live Demo</button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="Images/todo-project.png" alt="project 3" 
+            class="project-img">
+          </div>
+          <h2 class="experience-sub-title">Project Three</h2>
+          <div class="btn-conatiner">
+            <button class="btn btn-color-2 project-btn" 
+            onclick="location.href = 'https://github.com/Luccodev/Todo-List' ">
+            GitHub</button>
+            <button class="btn btn-color-2 project-btn" 
+            onclick="location.href = 'https://cool-todo-list-app.netlify.app/' ">
+            live Demo</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    <img src="./Icons/arrow.png" alt="arrow icon" class="icon arrow" 
+    onclick="location.href = '#contact'">
+  </section>
+  <section id="contact">
+    <p class="section_text_p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+      <img src="Icons/email.png" alt=" Email icon"
+       class="icon contact-icon email-icon">
+      <p><a href="mailto:mahlangutshepang45@gmail.com">
+        mahlangutshepang45@gmail.com</a></p>
+    </div>
+    <div class="contact-info-container">
+      <img src="Icons/linkedin.png" alt="linkedin icon"
+       class="icon contact-icon">
+      <p><a href="https://www.linkedin.com/in/lucas-mahlangu-38184a201">
+        linkedin</a></p>
+    </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 Mahlangu Lucas.All Rights Reserved</p>
+  </footer>
+</body>
+</html>
